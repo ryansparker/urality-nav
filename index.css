@@ -7,6 +7,7 @@ a {
   nav {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+    font-weight: 500;
   }
   
   ul {
@@ -29,6 +30,7 @@ a {
     
   li a {
     color: #263239;
+   
   }
   
   li:hover {
@@ -69,4 +71,13 @@ a {
   .dropdown li {
       /* background-color: pink; */
       padding: 0 30px 20px 0;
+      font-weight: 400;
   }
+
+  .list-header {
+      color: #595959;
+      font-weight: 700 !important;
+      text-transform: uppercase;
+  }
+
+  /* ///////////////////// */

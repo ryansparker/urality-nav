@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #263239;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #263239;
+  }
+
+  ul {
+    background: #FFFFFF;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+      padding-left: 10px;
+  }
+  
+
+  .navbar {
+    overflow: hidden;
+    background-color: pink;
+  }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  
+  }
+  
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 30px 25px 25px 10px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+   
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .list-header {
+    color: #595959;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    border-bottom: 1px solid #C4C4C4;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    margin-left: 20px;
+    display: inline-flex;
+    text-align: left;
+}
+
+.icon {
+    background-image: url("./images/placeholder-communities.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 7px;
+    /* Other styles here */
+}
+
+.icon.features {
+    background-image: url("./images/placeholder-features.svg");
+    height: 20px;
+    width: 24px;
+}
+
+.icon.communities {
+    background-image: url("./images/placeholder-communities.svg");
+    height: 20px;
+    width: 35px;
+}
+
+.icon.professionals {
+    background-image: url("./images/placeholder-professionals.svg");
+    height: 20px;
+    width: 35px;
+}
+
+.icon.creators {
+    background-image: url("./images/placeholder-creators.svg");
+    height: 20px;
+    width: 24px;
+}
