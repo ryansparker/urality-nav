@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+html {
+    box-sizing: border-box;
+  }
+  
+
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #263239;
+    margin: 0px;
   }
-  
+  .logo {
+      width: 105px;
+      height: 27px;
+      padding: 35px;
+      
+  }
   a {
     text-decoration: none;
     color: #263239;
@@ -20,39 +32,40 @@ body {
   }
 
   li {
-      padding-left: 10px;
+      padding: 0px;
   }
   
 
   .navbar {
-    overflow: hidden;
-    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: pink; */
   }
   
   .navbar a {
-    float: left;
+    /* float: left; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  
-  }
-  
+
   .dropdown .dropbtn {
     border: none;
     outline: none;
-    padding: 14px 16px;
+    padding: 40px 0px 5px 0px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin-right: 40px;
   }
   
+
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    border-bottom: 1px solid #263239;
   }
   
   .dropdown-content {
@@ -61,6 +74,7 @@ body {
     background-color: #FFFFFF;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
     z-index: 1;
     list-style: none;
     padding: 30px 25px 25px 10px;
@@ -68,16 +82,15 @@ body {
   
   .dropdown-content a {
     float: none;
-    padding: 12px 10px;
+    padding: 0 0 5px 0;
+
+    width: fit-content;
     text-decoration: none;
     display: block;
     text-align: left;
+    margin: 20px 10px 20px 20px;
   }
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
-   
-  }
   
   .dropdown:hover .dropdown-content {
     display: flex;
@@ -85,6 +98,7 @@ body {
 
   .list-header {
     color: #595959;
+    width: 230px;
     font-weight: 700 !important;
     text-transform: uppercase;
     border-bottom: 1px solid #C4C4C4;
@@ -108,6 +122,7 @@ body {
     background-image: url("./images/placeholder-features.svg");
     height: 20px;
     width: 24px;
+    margin-right: 5px;
 }
 
 .icon.communities {
@@ -116,14 +131,36 @@ body {
     width: 35px;
 }
 
+#communities {
+    margin-right:20px;
+}
 .icon.professionals {
     background-image: url("./images/placeholder-professionals.svg");
     height: 20px;
     width: 35px;
 }
-
+#professionals {
+    margin-right:20px;
+}
 .icon.creators {
     background-image: url("./images/placeholder-creators.svg");
     height: 20px;
     width: 24px;
 }
+#login.dropdown {
+    margin-left: auto;
+    /* background-color: aqua;  */
+}
+#create.dropdown {
+    align-self: center;
+}
+
+#createbtn {
+    padding: 13px 10px 13px 10px;
+    border: 1px solid #006E77;
+    border-radius: 5px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+
+
+}
+
